@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="8856" started-at="2018-11-01T00:47:16Z" finished-at="2018-11-01T00:47:24Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="8856" started-at="2018-11-01T00:47:16Z" finished-at="2018-11-01T00:47:24Z">
+      <class name="com.ghoshchandan19.RestAssured1.TestCases.VerifyCustomerApi">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ghoshchandan19.RestAssured1.TestCases.VerifyCustomerApi@c6f217]" name="setUp" is-config="true" duration-ms="877" started-at="2018-11-01T00:47:15Z" finished-at="2018-11-01T00:47:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.ghoshchandan19.RestAssured1.TestCases.VerifyCustomerApi@c6f217]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-11-01T00:47:16Z" finished-at="2018-11-01T00:47:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.ghoshchandan19.RestAssured1.TestCases.VerifyCustomerApi@c6f217]" name="beforeClass" is-config="true" duration-ms="4" started-at="2018-11-01T00:47:16Z" finished-at="2018-11-01T00:47:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.ghoshchandan19.RestAssured1.TestCases.VerifyCustomerApi@c6f217]" name="beforeMethod" is-config="true" duration-ms="218" started-at="2018-11-01T00:47:16Z" finished-at="2018-11-01T00:47:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ghoshchandan19.RestAssured1.TestCases.VerifyCustomerApi.verifyCreateCustomer(java.util.Hashtable) throws com.fasterxml.jackson.core.JsonParseException,com.fasterxml.jackson.databind.JsonMappingException,java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyCreateCustomer(java.util.Hashtable)[pri:0, instance:com.ghoshchandan19.RestAssured1.TestCases.VerifyCustomerApi@c6f217]" name="verifyCreateCustomer" duration-ms="4503" started-at="2018-11-01T00:47:16Z" data-provider="dp" finished-at="2018-11-01T00:47:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=trainer@yahoo.com, statuscode=200, endpoint=/customers}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateCustomer -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.ghoshchandan19.RestAssured1.TestCases.VerifyCustomerApi@c6f217]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-11-01T00:47:21Z" finished-at="2018-11-01T00:47:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCreateCustomer status=SUCCESS method=VerifyCustomerApi.verifyCreateCustomer(java.util.Hashtable)[pri:0, instance:com.ghoshchandan19.RestAssured1.TestCases.VerifyCustomerApi@c6f217] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.ghoshchandan19.RestAssured1.TestCases.VerifyCustomerApi@c6f217]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-11-01T00:47:21Z" finished-at="2018-11-01T00:47:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ghoshchandan19.RestAssured1.TestCases.VerifyCustomerApi.verifydeleteCustomer(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="verifydeleteCustomer(java.util.Hashtable)[pri:0, instance:com.ghoshchandan19.RestAssured1.TestCases.VerifyCustomerApi@c6f217]" name="verifydeleteCustomer" duration-ms="3442" started-at="2018-11-01T00:47:21Z" data-provider="dp" finished-at="2018-11-01T00:47:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{endpoint=customers/cus_DsvWuTDEO7xZwU}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [null]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:442)
+at com.ghoshchandan19.RestAssured1.TestCases.VerifyCustomerApi.verifydeleteCustomer(VerifyCustomerApi.java:51)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifydeleteCustomer -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.ghoshchandan19.RestAssured1.TestCases.VerifyCustomerApi@c6f217]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-11-01T00:47:24Z" finished-at="2018-11-01T00:47:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.ghoshchandan19.RestAssured1.TestCases.VerifyCustomerApi@c6f217]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-01T00:47:24Z" finished-at="2018-11-01T00:47:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifydeleteCustomer status=FAILURE method=VerifyCustomerApi.verifydeleteCustomer(java.util.Hashtable)[pri:0, instance:com.ghoshchandan19.RestAssured1.TestCases.VerifyCustomerApi@c6f217] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.ghoshchandan19.RestAssured1.TestCases.VerifyCustomerApi@c6f217]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-11-01T00:47:24Z" finished-at="2018-11-01T00:47:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ghoshchandan19.RestAssured1.TestCases.VerifyCustomerApi@c6f217]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-01T00:47:25Z" finished-at="2018-11-01T00:47:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ghoshchandan19.RestAssured1.TestCases.VerifyCustomerApi -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -4,7 +4,7 @@
   <listeners>
     <listener class-name="com.ghoshchandan19.RestAssured1.CustomListeners.CustomListener"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test name="Test(failed)">
     <classes>
       <class name="com.ghoshchandan19.RestAssured1.TestCases.VerifyCustomerApi">
         <methods>

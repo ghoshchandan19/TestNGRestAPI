@@ -48,7 +48,7 @@ public class VerifyCustomerApi extends TestSetup {
 	public void verifydeleteCustomer(Hashtable<String, String> data) {
 		Response response = requestSpecification.delete(data.get("endpoint")).then().extract().response();
 		JsonPath delResponse = response.jsonPath();
-		Assert.assertEquals(delResponse.get("deleted"), true);
+		Assert.assertEquals(delResponse.get("deleted"),"false");
 	}
 
 	/*
